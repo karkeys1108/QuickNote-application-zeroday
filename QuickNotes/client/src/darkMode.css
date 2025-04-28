@@ -1,0 +1,152 @@
+/* Dark Mode Specific Styles */
+.dark {
+  /* Text colors */
+  --text-primary: #f3f4f6;
+  --text-secondary: #d1d5db;
+  --text-tertiary: #9ca3af;
+  --text-muted: #6b7280;
+  
+  /* Background colors */
+  --bg-primary: #111827;
+  --bg-secondary: #1f2937;
+  --bg-tertiary: #374151;
+  --bg-card: #1f2937;
+  
+  /* Border colors */
+  --border-color: #374151;
+  
+  /* Accent colors */
+  --accent-color: #10b981;
+  --accent-hover: #059669;
+}
+
+/* Apply dark mode text colors */
+.dark body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: var(--text-primary);
+}
+
+.dark p {
+  color: var(--text-secondary);
+}
+
+.dark .text-gray-900 {
+  color: var(--text-primary) !important;
+}
+
+.dark .text-gray-800 {
+  color: var(--text-primary) !important;
+}
+
+.dark .text-gray-700 {
+  color: var(--text-secondary) !important;
+}
+
+.dark .text-gray-600 {
+  color: var(--text-secondary) !important;
+}
+
+.dark .text-gray-500 {
+  color: var(--text-tertiary) !important;
+}
+
+.dark .text-gray-400 {
+  color: var(--text-muted) !important;
+}
+
+/* Dark mode card styles */
+.dark .bg-white {
+  background-color: var(--bg-card) !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: var(--bg-tertiary) !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: var(--bg-primary) !important;
+}
+
+.dark .border-gray-200 {
+  border-color: var(--border-color) !important;
+}
+
+/* Input fields in dark mode */
+.dark .input-field {
+  background-color: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+.dark .input-field:focus {
+  border-color: var(--accent-color) !important;
+}
+
+/* Buttons in dark mode */
+.dark .btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.dark .btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.dark .btn-secondary {
+  background-color: var(--bg-tertiary);
+  color: var(--text-secondary);
+}
+
+.dark .btn-secondary:hover {
+  background-color: var(--bg-secondary);
+}
+
+/* Sidebar in dark mode */
+.dark .sidebar-icon {
+  background-color: var(--bg-secondary);
+  color: var(--accent-color);
+}
+
+.dark .sidebar-icon:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* Note cards in dark mode */
+.dark .note-card {
+  background-color: var(--bg-card);
+  border-color: var(--border-color);
+}
+
+/* Note text in dark mode - making it black for better visibility */
+.dark .note-card p,
+.dark .note-card .note-content,
+.dark .note-card .note-title,
+.dark .note-card div,
+.dark .note-content,
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,
+.dark .note-card h1, .dark .note-card h2, .dark .note-card h3, 
+.dark .note-card h4, .dark .note-card h5, .dark .note-card h6 {
+  color: #000000 !important;
+}
+
+/* Make sure note title is visible */
+.dark .note-title,
+.dark .MuiTypography-root,
+.dark [class*="title"],
+.dark [class*="Title"],
+.dark .title,
+.dark .card-title {
+  color: #000000 !important;
+  font-weight: bold !important;
+}
+
+/* Tooltips in dark mode */
+.dark .sidebar-tooltip {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
